@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wtuscano.myapplication.MainActivity">
+
+    <Button
+        android:id="@+id/btnLoginAsAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLoginAsDriver"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnLoginAsDriver"
+        android:layout_marginTop="109dp"
+        android:width="300dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:text="@string/loginAsAdmin"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/btnLoginAsDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoginAsAdmin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:width="300dp"
+        android:background="?attr/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:text="@string/loginAsDriver"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+</RelativeLayout>

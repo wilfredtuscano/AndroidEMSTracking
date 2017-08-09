@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wtuscano.emstracking.activity.CreateEventActivity">
+
+    <fragment
+        android:id="@+id/startLocationPicker"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFName"
+        android:layout_alignStart="@+id/tvFName"
+        android:layout_below="@+id/tvFName" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvCoordinator"
+        android:layout_alignEnd="@+id/tvTitle"
+        android:layout_alignRight="@+id/tvTitle"
+        android:layout_marginBottom="49dp"
+        android:text="@string/date" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etEventTitle"
+        android:layout_alignBottom="@+id/etEventTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="@string/title" />
+
+    <EditText
+        android:id="@+id/etEventTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDate"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/tvCoordinator"
+        android:layout_toRightOf="@+id/tvCoordinator"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvCoordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etCoordinator"
+        android:layout_alignBottom="@+id/etCoordinator"
+        android:layout_alignLeft="@+id/tvDate"
+        android:layout_alignStart="@+id/tvDate"
+        android:text="@string/coordinator" />
+
+    <EditText
+        android:id="@+id/etCoordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etCoordinatorNumber"
+        android:layout_alignLeft="@+id/etEventTitle"
+        android:layout_alignStart="@+id/etEventTitle"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvCoordinatorNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCreateEvent"
+        android:layout_alignEnd="@+id/tvCoordinator"
+        android:layout_alignLeft="@+id/tvCoordinator"
+        android:layout_alignRight="@+id/tvCoordinator"
+        android:layout_alignStart="@+id/tvCoordinator"
+        android:layout_marginBottom="165dp"
+        android:text="@string/coordinatorNumber" />
+
+    <EditText
+        android:id="@+id/etCoordinatorNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etCoordinator"
+        android:layout_alignStart="@+id/etCoordinator"
+        android:layout_alignTop="@+id/tvCoordinatorNumber"
+        android:maxLength="10"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCreateEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/create" />
+
+    <TextView
+        android:id="@+id/tvCreateNewEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/createNewEvent" />
+
+    <TextView
+        android:id="@+id/tvDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDate"
+        android:layout_alignBottom="@+id/tvDate"
+        android:layout_alignLeft="@+id/etEventTitle"
+        android:layout_alignStart="@+id/etEventTitle"
+        android:text="@string/today"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/tvFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_alignStart="@+id/tvTitle"
+        android:layout_below="@+id/etCoordinatorNumber"
+        android:layout_marginTop="34dp"
+        android:text="@string/startLocation" />
+
+    <TextView
+        android:id="@+id/tvDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/destinationtLocationPicker"
+        android:layout_alignLeft="@+id/tvCoordinatorNumber"
+        android:layout_alignStart="@+id/tvCoordinatorNumber"
+        android:text="@string/destination" />
+
+    <fragment
+        android:id="@+id/destinationtLocationPicker"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCreateEvent"
+        android:layout_alignLeft="@+id/startLocationPicker"
+        android:layout_alignStart="@+id/startLocationPicker"
+        android:layout_marginBottom="21dp" />
+
+</RelativeLayout>

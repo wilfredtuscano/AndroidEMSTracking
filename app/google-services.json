@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "858082471827",
+    "firebase_url": "https://emstracking-51d6e.firebaseio.com",
+    "project_id": "emstracking-51d6e",
+    "storage_bucket": "emstracking-51d6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858082471827:android:890588b043abf479",
+        "android_client_info": {
+          "package_name": "com.example.wtuscano.emstracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858082471827-qt527vf37la6haqjp9mpc2148g9hiq7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wtuscano.emstracking",
+            "certificate_hash": "5afb8046772e8b3f10103ff283228c17949877c7"
+          }
+        },
+        {
+          "client_id": "858082471827-umqusbh2cp5mj4gro7vu074dug2k0q4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgmXJt_G0pkNiFw3XcGoyEybP1oJVEo70"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858082471827-umqusbh2cp5mj4gro7vu074dug2k0q4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wtuscano.emstracking.fragment.EventDetailsFragment">
+
+    <TextView
+        android:id="@+id/tvEventDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/eventDetails" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:text="@string/title"
+        android:layout_below="@+id/tvEventDetails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/date"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_alignStart="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvCoordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/coordinator"
+        android:layout_below="@+id/tvDate"
+        android:layout_alignLeft="@+id/tvDate"
+        android:layout_alignStart="@+id/tvDate" />
+
+    <TextView
+        android:id="@+id/tvCoordinatorNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCoordinator"
+        android:layout_alignStart="@+id/tvCoordinator"
+        android:layout_below="@+id/tvCoordinator"
+        android:layout_marginTop="24dp"
+        android:text="@string/coordinatorNumber"
+        android:layout_alignRight="@+id/tvCoordinator"
+        android:layout_alignEnd="@+id/tvCoordinator" />
+
+    <TextView
+        android:id="@+id/tvFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCoordinatorNumber"
+        android:layout_alignStart="@+id/tvCoordinatorNumber"
+        android:layout_below="@+id/tvCoordinatorNumber"
+        android:layout_marginTop="24dp"
+        android:text="@string/startLocation" />
+
+    <TextView
+        android:id="@+id/tvLName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/destination"
+        android:layout_below="@+id/tvFName"
+        android:layout_alignLeft="@+id/tvFName"
+        android:layout_alignStart="@+id/tvFName" />
+
+    <TextView
+        android:id="@+id/tvTitleValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDate"
+        android:layout_alignLeft="@+id/tvEventDetails"
+        android:layout_alignStart="@+id/tvEventDetails"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvDateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvDate"
+        android:layout_alignLeft="@+id/tvTitleValue"
+        android:layout_alignStart="@+id/tvTitleValue"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvCoordinatorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tvCoordinator"
+        android:layout_alignBottom="@+id/tvCoordinator"
+        android:layout_alignLeft="@+id/tvDateValue"
+        android:layout_alignStart="@+id/tvDateValue" />
+
+    <TextView
+        android:id="@+id/tvCoordinatorNumberValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCoordinatorValue"
+        android:layout_alignStart="@+id/tvCoordinatorValue"
+        android:layout_alignTop="@+id/tvCoordinatorNumber"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvStartLocationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCoordinatorNumberValue"
+        android:layout_alignStart="@+id/tvCoordinatorNumberValue"
+        android:layout_alignTop="@+id/tvFName"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvDestinationLocationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvLName"
+        android:layout_alignLeft="@+id/tvStartLocationValue"
+        android:layout_alignStart="@+id/tvStartLocationValue"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnRegisterForEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/register"
+        android:layout_below="@+id/tvDestinationLocationValue"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnNavToSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="@string/navigateToSource"
+        android:layout_below="@+id/btnRegisterForEvent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnRegisterForEvent"
+        android:layout_toStartOf="@+id/btnRegisterForEvent" />
+
+    <Button
+        android:id="@+id/btnNavToDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnNavToSource"
+        android:layout_toEndOf="@+id/btnRegisterForEvent"
+        android:layout_toRightOf="@+id/btnRegisterForEvent"
+        android:text="@string/navigateToDestination" />
+
+</RelativeLayout>

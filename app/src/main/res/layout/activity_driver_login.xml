@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wtuscano.myapplication.DriverLoginActivity">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:text="@string/login"
+        android:textSize="25dp"
+        android:textColor="@color/wallet_holo_blue_light"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <EditText
+        android:id="@+id/etFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="102dp"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/tvLogin"
+        android:layout_alignLeft="@+id/etLname"
+        android:layout_alignStart="@+id/etLname" />
+
+    <EditText
+        android:id="@+id/etLname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="192dp"
+        android:layout_below="@+id/etFname"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etBusNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bus Number Plate"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="280dp"
+        android:layout_below="@+id/etLname"
+        android:layout_alignLeft="@+id/etLname"
+        android:layout_alignStart="@+id/etLname" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="378dp"
+        android:layout_below="@+id/etDriverContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <EditText
+        android:id="@+id/etDriverContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/contactNumber"
+        android:inputType="number"
+        android:layout_below="@+id/etBusNumber"
+        android:layout_alignLeft="@+id/etBusNumber"
+        android:layout_alignStart="@+id/etBusNumber"
+        android:maxLength="10"/>
+</RelativeLayout>
